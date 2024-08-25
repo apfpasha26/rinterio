@@ -29,20 +29,26 @@
 <body>
     <header class="bg-gradient-to-b from-slate-100 to-white mb-20">
         <!-- navbar section starts here  -->
-        <nav class="flex justify-around pt-10 w-5/6 mx-auto mb-10">
+        <nav class="flex justify-around pt-10 lg:w-5/6 mx-auto mb-10">
             <button class="flex justify-center items-center gap-x-1 rounded-full">
                 <span class="inline-flex justify-center items-center bg-[#ABEF5F] h-7 w-7 rounded-full"><a href="#"><i
                             class="fa-solid fa-arrow-up rotate-45 "></i></a></span>
                 <h1 class="text-3xl font-bold"><a href="#">Rinterio</a></h1>
             </button>
-            <div class="flex gap-x-5 justify-center items-center">
+            <div class="block lg:hidden">
+                <span
+                    class="inline-flex justify-center items-center bg-[#FFFFFF] shadow-lg h-7 w-7 rounded-full cursor-pointer">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+            <div class="hidden lg:flex gap-x-5 justify-center items-center">
                 <span class="text-base font-bold text-[#494949] cursor-pointer"><a href="#">Home</a></span>
                 <span class="text-[#737373] cursor-pointer"><a href="#">Services</a></span>
                 <span class="text-[#737373] cursor-pointer"><a href="#">Portfolio</a></span>
                 <span class="text-[#737373] cursor-pointer"><a href="#">Blogs</a></span>
                 <span class="text-[#737373] cursor-pointer"><a href="#">Contact Us</a></span>
             </div>
-            <div class="flex justify-center items-center gap-x-5">
+            <div class="hidden lg:flex justify-center items-center gap-x-5">
                 <span
                     class="inline-flex justify-center items-center bg-[#FFFFFF] shadow-lg h-7 w-7 rounded-full cursor-pointer"><i
                         class="fa-solid fa-magnifying-glass"></i></span>
@@ -65,7 +71,7 @@
                     <img src="assets/banner.png" alt="">
                 </div>
 
-                <h2 class="text-6xl text-[#212121] font-bold text-center">A barn house of this design has a striking
+                <h2 class="text-3xl lg:text-6xl text-[#212121] font-bold text-center">A barn house of this design has a striking
                     appearance</h2>
                 <p class="text-[#494949] text-center w-3/4">The barn house captivates with its blend of rustic charm and
                     modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood
@@ -84,44 +90,46 @@
         <!-- work section starts here  -->
         <section class="bg-gray-100 py-10">
             <div class="w-11/12 mx-auto">
-                <div class="mb-5">
+                <div class="hidden lg:block mb-5">
                     <img src="assets/Vector.png" alt="">
                 </div>
-                <div class="flex gap-10 w-5/6 mx-auto">
+                <div class="lg:flex gap-10 lg:w-5/6 mx-auto">
                     <!-- text content  -->
-                    <div class="w-2/4">
-                        <div class="text-[#494949] font-bold py-2 px-3 bg-white inline-block rounded-full">
-                            <h4><i class="fa-solid fa-arrow-up rotate-90"></i> About Us</h4>
+                    <div class="lg:w-2/4">
+                        <div class="text-center">
+                            <div class="text-[#494949] font-bold py-2 px-3 bg-white inline-block rounded-full">
+                                <h4><i class="fa-solid fa-arrow-up rotate-90"></i> About Us</h4>
+                            </div>
                         </div>
-                        <div>
-                            <h2 class="text-[#212121] text-4xl font-bold my-5">We design thoughtful, liveable spaces
+                        <div class="text-center lg:text-left">
+                            <h2 class="text-[#212121] text-2xl lg:text-4xl font-bold my-5">We design thoughtful, liveable spaces
                             </h2>
                             <p class="text-[#494949] my-5">The barn house captivates with its blend of rustic charm and
                                 modern sophistication, featuring weathered wood, sleek metal accents.</p>
                         </div>
-                        <div class="flex justify-center items-center gap-x-5 p-5 bg-white shadow-lg rounded-xl">
+                        <div class="flex justify-center lg:items-center gap-x-5 p-5 bg-white shadow-lg rounded-xl">
                             <div>
                                 <img src="assets/commercial.png" alt="">
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold">Commercial</h4>
-                                <p class="my-1 w-3/4">The barn house captivates with its blend of rustic charm and
+                                <p class="my-1 lg:w-3/4">The barn house captivates with its blend of rustic charm and
                                     modern.</p>
                             </div>
                         </div>
-                        <div class="flex justify-center items-center gap-x-5 my-6 p-5 bg-white shadow-lg rounded-xl">
+                        <div class="flex justify-center lg:items-center gap-x-5 my-6 p-5 bg-white shadow-lg rounded-xl">
                             <div>
                                 <img src="assets/residential.png" alt="">
                             </div>
                             <div>
                                 <h4 class="text-xl font-bold">Residential</h4>
-                                <p class="my-1 w-3/4">The barn house captivates with its blend of rustic charm and
+                                <p class="my-1 lg:w-3/4">The barn house captivates with its blend of rustic charm and
                                     modern.</p>
                             </div>
                         </div>
                     </div>
                     <!-- image content  -->
-                    <div class="w-2/4">
+                    <div class="lg:w-2/4">
                         <img src="assets/Rectangle.png" alt="">
                     </div>
                 </div>
@@ -130,7 +138,7 @@
         </section>
         <!-- work process starts here  -->
         <section class="bg-gray-100 mb-10 pb-10">
-            <div class="w-3/4 mx-auto">
+            <div class="lg:w-3/4 mx-auto">
                 <div class="text-center">
                     <div
                         class="text-[#494949] font-bold text-center py-2 px-3 bg-white inline-block mx-auto rounded-full">
@@ -138,11 +146,11 @@
                     </div>
                 </div>
                 <div>
-                    <h2 class="text-[#212121] text-4xl font-bold text-center my-5">Our Works Process</h2>
-                    <p class="text-[#494949] text-center my-5 w-3/5 mx-auto">The barn house captivates with its blend of
+                    <h2 class="text-[#212121] text-2xl lg:text-4xl font-bold text-center my-5">Our Works Process</h2>
+                    <p class="text-[#494949] text-center my-5 lg:w-3/5 mx-auto">The barn house captivates with its blend of
                         rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
-                <div class="flex justify-center items-center gap-5 ">
+                <div class="grid lg:flex justify-center items-center gap-5 w-11/12 mx-auto">
                     <div class="bg-[#E7C1D3] rounded-xl p-5">
                         <img src="assets/concept.png" alt="">
                         <h3 class="text-xl text-[#1C1C1C] font-bold">Concept</h3>
@@ -231,63 +239,74 @@
                 </div>
             </div>
         </section>
+        <!-- form section starts here  -->
         <section class="bg-[url('assets/bg.jpg')] bg-no-repeat bg-cover">
-            <div class="w-3/4 mx-auto py-20">
+            <div class="lg:w-3/4 mx-auto py-20">
                 <div class="text-center">
-                    <div class="text-[#494949] font-bold text-center py-2 px-3 bg-lime-100 inline-block mx-auto rounded-full">
+                    <div
+                        class="text-[#494949] font-bold text-center py-2 px-3 bg-lime-100 inline-block mx-auto rounded-full">
                         <h4><i class="fa-solid fa-arrow-up rotate-90"></i> Let’s Connect</h4>
                     </div>
                 </div>
                 <div>
-                    <h2 class="text-[#212121] text-4xl font-bold text-center my-5">Let’s Discuss Next Project</h2>
-                    <p class="text-[#494949] text-center my-5 w-3/5 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <h2 class="text-[#212121] text-4xl font-black lg:font-bold text-center my-5">Let’s Discuss Next Project</h2>
+                    <p class="text-[#494949] text-center my-5 lg:w-3/5 mx-auto">The barn house captivates with its blend of
+                        rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
 
-                <form action="#" class="w-4/5 mx-auto  p-6">
-                  
+                <form action="#" class="lg:w-4/5 mx-auto  p-6">
+
                     <!-- First Row: First Name and Last Name -->
-                    <div class="mb-4 flex space-x-4">
-                      <input type="text" name="firstname" placeholder="First Name*" class="w-1/2 px-3 py-2 rounded-full " required>
-                      <input type="text" name="lastname" placeholder="Last Name*" class="w-1/2 px-3 py-2 rounded-full" required>
+                    <div class="mb-4 grid lg:flex lg:space-x-4 space-y-4">
+                        <input type="text" name="firstname" placeholder="First Name*"
+                            class="lg:w-1/2 px-3 py-2 rounded-full " required>
+                        <input type="text" name="lastname" placeholder="Last Name*" class="lg:w-1/2 px-3 py-2 rounded-full"
+                            required>
                     </div>
-                  
+
                     <!-- Second Row: Phone Number and Email -->
-                    <div class="mb-4 flex space-x-4">
-                      <input type="tel" name="phone" placeholder="Phone Number*" class="w-1/2 px-3 py-2  rounded-full" required>
-                      <input type="email" name="email" placeholder="Email*" class="w-1/2 px-3 py-2  rounded-full" required>
+                    <div class="mb-4 grid lg:flex lg:space-x-4 space-y-4">
+                        <input type="tel" name="phone" placeholder="Phone Number*" class="lg:w-1/2 px-3 py-2  rounded-full"
+                            required>
+                        <input type="email" name="email" placeholder="Email*" class="lg:w-1/2 px-3 py-2  rounded-full"
+                            required>
                     </div>
-                  
+
                     <!-- Third Row: Message -->
                     <div class="mb-4">
-                      <textarea name="message" placeholder="Write your message here" class="w-full px-3 py-2  rounded-3xl " rows="8" required></textarea>
+                        <textarea name="message" placeholder="Write your message here"
+                            class="w-full px-3 py-2  rounded-3xl " rows="8" required></textarea>
                     </div>
-                  
+
                     <!-- Submit Button -->
                     <div>
-                      <button type="submit" class="w-full bg-[#ABEF5F] text-lg text-[#1C1C1C] font-bold py-2 px-4 rounded-xl">
-                        Send Mail <span class="inline-flex justify-center items-center bg-black h-7 w-7 rounded-full"><i class="fa-solid fa-arrow-up rotate-45 text-white"></i></span>
-                      </button>
+                        <button type="submit"
+                            class="w-full bg-[#ABEF5F] text-lg text-[#1C1C1C] font-bold py-2 px-4 rounded-xl">
+                            Send Mail <span
+                                class="inline-flex justify-center items-center bg-black h-7 w-7 rounded-full"><i
+                                    class="fa-solid fa-arrow-up rotate-45 text-white"></i></span>
+                        </button>
                     </div>
-                  </form>
-                  
-                  
-                 <!-- bye section  -->
+                </form>
+
+
+                <!-- bye section  -->
             </div>
         </section>
     </main>
     <footer>
         <div class="bg-[#1C1C1C] py-20">
-            <div class="w-3/4 mx-auto">
+            <div class="lg:w-3/4 mx-auto">
                 <div class="flex justify-center items-center gap-x-1 rounded-full mb-10">
                     <span class="inline-flex justify-center items-center bg-[#ABEF5F] h-7 w-7 rounded-full"><i
                             class="fa-solid fa-arrow-up rotate-45 "></i></span>
                     <h1 class="text-3xl font-bold text-white">Rinterio</h1>
                 </div>
-                <div class="w-2/3 mx-auto mb-5">
+                <div class="w-11/12 lg:w-2/3 mx-auto mb-5">
                     <p class="text-[#737373] text-center">The barn house captivates with its blend of rustic charm and
                         modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
-                <div class="flex gap-x-32 justify-center items-center mb-10">
+                <div class="grid gap-y-5 text-center  lg:flex gap-x-32 justify-center items-center mb-10">
                     <span class="text-[#E9E9E9] cursor-pointer"><a href="#">Home</a></span>
                     <span class="text-[#E9E9E9] cursor-pointer"><a href="#">Services</a></span>
                     <span class="text-[#E9E9E9] cursor-pointer"><a href="#">Portfolio</a></span>
@@ -296,7 +315,9 @@
                 </div>
                 <div class="grid items-center justify-center">
                     <button class="inline-block bg-[#ABEF5F] px-3 py-2 rounded-full">
-                        <h1 class="text-xl font-bold"><a href="#">Book Consult <span class="inline-flex justify-center items-center bg-black h-7 w-7 rounded-full"><i class="fa-solid fa-arrow-up rotate-45 text-white"></i></span></a></h1>
+                        <h1 class="text-xl font-bold"><a href="#">Book Consult <span
+                                    class="inline-flex justify-center items-center bg-black h-7 w-7 rounded-full"><i
+                                        class="fa-solid fa-arrow-up rotate-45 text-white"></i></span></a></h1>
                     </button>
                 </div>
             </div>
